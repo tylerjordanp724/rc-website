@@ -1,0 +1,106 @@
+// Colors
+// -------------------------
+
+$white: #fff !default;
+$black: #212528 !default;
+
+$bodyBackground: $white !default;
+$textColor: $black !default;
+
+$lightGray: #eee;
+
+// Links
+// -------------------------
+$linkColor: $black !default;
+$linkColorVisited: $black !default;
+$linkColorHover: $black !default;
+$linkColorActive: $black !default;
+
+
+// Transitions
+// -------------------------
+$cbTrans: cubic-bezier(.67,.01,.24,1);
+
+
+// Kerning
+// -------------------------
+$kerning50: 1px;
+$kerning100: 2px;
+$kerning150: 3px;
+
+
+// Typograohy
+// -------------------------
+$fontFamily: 'sofia-pro', sans-serif !default;
+$serifFontFamily: Garamond, serif !default;
+
+$baseFontSize: 18px !default;
+$baseFontFamily: $fontFamily !default;
+$baseLineHeight: 1.8 !default;
+$baseMargin: 24px;
+
+$headingsFontFamily: serif !default;
+$headingsFontWeight: 700 !default;
+$headingsColor: inherit !default;
+
+
+// Media Queries Breakpoints
+// --------------------------------------------------
+
+// Breakpoints
+// Extra extra small screen / phone
+$screen-xxs:                 321px !default;
+$screen-phone:               $screen-xxs !default;
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  576px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  768px !default;
+$screen-desktop:             $screen-md !default;
+
+// Medium-Large screen / desktop
+$screen-mdlg:                  1100px !default;
+$screen-desktop:             $screen-mdlg !default;
+
+// Large screen / wide desktop
+$screen-lg:                  992px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+$screen-xl:                  1200px !default;
+$screen-xl-desktop:          $screen-xl !default;
+
+$screen-xxl:                  1400px !default;
+$screen-xxl-desktop:          $screen-xl !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+$grid-columns:              12 !default;
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:         30px !default;
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint:     $screen-tablet !default;
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:            ((720px + $grid-gutter-width)) !default;
+
+// Medium screen / desktop
+$container-desktop:           ((940px + $grid-gutter-width)) !default;
+
+// Large screen / wide desktop
+$container-lg-desktop:        ((1140px + $grid-gutter-width)) !default;
