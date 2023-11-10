@@ -151,6 +151,70 @@ function rc_scripts() {
 add_action('wp_enqueue_style', 'rc_scripts');
 add_action( 'wp_enqueue_scripts', 'rc_scripts' );
 
+// Register Custom Post Type
+function red_camel_vehicle() {
+
+	$labels = array(
+		'name'                  => _x( 'Vehicles', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Vehicle', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Vehicles', 'text_domain' ),
+		'name_admin_bar'        => __( 'Vehicle', 'text_domain' ),
+		'archives'              => __( 'Vehicle Archives', 'text_domain' ),
+		'attributes'            => __( 'Vehicle Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Vehicle:', 'text_domain' ),
+		'all_items'             => __( 'All Vehicles', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Vehicle', 'text_domain' ),
+		'add_new'               => __( 'Add New Vehicle', 'text_domain' ),
+		'new_item'              => __( 'New Vehicle', 'text_domain' ),
+		'edit_item'             => __( 'Edit Vehicle', 'text_domain' ),
+		'update_item'           => __( 'Update Vehicle', 'text_domain' ),
+		'view_item'             => __( 'View Vehicle', 'text_domain' ),
+		'view_items'            => __( 'View Vehicles', 'text_domain' ),
+		'search_items'          => __( 'Search Vehicle', 'text_domain' ),
+		'not_found'             => __( 'Vehicle Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Vehicle Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Vehicles list', 'text_domain' ),
+		'items_list_navigation' => __( 'Vehilces list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Vehicles list', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'vehicle',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Vehicle', 'text_domain' ),
+		'description'           => __( 'All vehicles for Red Camel Auto', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields' ),
+		'taxonomies'            => array( 'body', ' make', ' model', ' price', ' mileage', ' condition' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-car',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'rc_vehicle', $args );
+
+}
+add_action( 'init', 'red_camel_vehicle', 0 );
+
 /**
  * Implement the Custom Header feature.
  */
