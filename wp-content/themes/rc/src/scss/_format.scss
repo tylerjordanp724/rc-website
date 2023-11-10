@@ -2,7 +2,7 @@ html, body { height: 100%; }
 
 html { font-size: 100%; }
 
-body { background: $white; color: $black; font: 300 #{$baseFontSize}/#{$baseLineHeight} $fontFamily; margin: 0; overflow-x: hidden; letter-spacing: $kerning50; padding: 0;  }
+body { background: $white; color: $black; font: 300 #{$baseFontSize}/#{$baseLineHeight} $fontFamily; margin: 0; overflow-x: hidden; letter-spacing: 1.4; padding: 0;  }
 
 a { color: $linkColor; text-decoration: none; transition: color 0.3s $cbTrans, background-color 0.3s $cbTrans;
   &:visited { color: $linkColorVisited; }
@@ -22,7 +22,7 @@ small { font-size: 11px; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: $baseMargin 0; padding: 0; }
 blockquote { margin: $baseMargin $baseMargin / 2; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0 0 15px; font-family: $headingsFontFamily; font-weight: $headingsFontWeight; letter-spacing: $kerning50; line-height: 1.2; color: $headingsColor; text-rendering: optimizelegibility; text-transform: uppercase; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 15px; font-family: $headingsFontFamily; font-weight: $headingsFontWeight; letter-spacing: 1.4; line-height: 1.2; color: $headingsColor; text-rendering: optimizelegibility; text-transform: uppercase; }
 
 h1 { font-size: 38px; }
 h2 { font-size: 32px; }

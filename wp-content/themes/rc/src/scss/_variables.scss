@@ -39,7 +39,7 @@ $baseFontFamily: $fontFamily !default;
 $baseLineHeight: 1.8 !default;
 $baseMargin: 24px;
 
-$headingsFontFamily: serif !default;
+$headingsFontFamily: $fontFamily !default;
 $headingsFontWeight: 700 !default;
 $headingsColor: inherit !default;
 

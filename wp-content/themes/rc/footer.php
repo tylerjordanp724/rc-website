@@ -19,11 +19,6 @@
 				printf( esc_html__( 'Proudly powered by %s', 'rc' ), 'WordPress' );
 				?>
 			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'rc' ), 'rc', '<a href="http://iamtjp.com">Tyler J Perry</a>' );
-				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
