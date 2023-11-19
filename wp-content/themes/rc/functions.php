@@ -194,8 +194,8 @@ function red_camel_vehicle() {
 		'description'           => __( 'All vehicles for Red Camel Auto', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields' ),
-		'taxonomies'            => array( 'body', ' make', ' model', ' price', ' mileage', ' condition' ),
-		'hierarchical'          => false,
+		'taxonomies'            => array( 'body', 'make', 'model', 'price', 'mileage', 'condition' ),
+		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
@@ -214,6 +214,18 @@ function red_camel_vehicle() {
 
 }
 add_action( 'init', 'red_camel_vehicle', 0 );
+
+/**
+ * ACF Options Page
+ */
+
+ if(function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' => 'Footer Fields',
+		'menu_title' => 'Footer',
+		'menu_slug' => 'footer-fields'
+	));
+ }
 
 /**
  * Implement the Custom Header feature.
