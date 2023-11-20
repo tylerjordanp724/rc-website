@@ -25,36 +25,29 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader" href="#primary"><?php esc_html_e( 'Skip to content', 'rc' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+	<header class="header">
+		<div class="header__nav--mobile d-md-none">
+			<div class="header__nav-controls">
+				<div class="logo">
+					<h1 class="screen-reader"><?php bloginfo( 'name' ); ?></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo.svg');?></a>
+				</div>	
+				<div class="nav-btn"></div>
+			</div>
+			<nav class="header__nav-menu">
+				<?php wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$rc_description = get_bloginfo( 'description', 'display' );
-			if ( $rc_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $rc_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rc' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			</nav>
+		</div>
+		<div class="header__nav--desktop d-none d-md-block">
+			<div class="header__nav-wrapper container flex">
+				<div class="logo"></div>
+				<div class="header__nav-menu"></div>
+			</div>
+		</div>
+	</header>

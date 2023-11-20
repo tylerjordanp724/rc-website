@@ -10647,6 +10647,29 @@
       "oAP" : "\/wp-content\/themes\/rc\/header.php",
       "oF" : 0
     },
+    "\/wp-content\/themes\/rc\/img\/rc-logo.png" : {
+      "ft" : 32768,
+      "iS" : 4515,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/img\/rc-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/wp-content\/themes\/rc\/img\/rc-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/wp-content\/themes\/rc\/img\/rc-logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/wp-content\/themes\/rc\/inc\/custom-header.php" : {
       "cB" : 0,
       "ft" : 8192,
