@@ -11505,6 +11505,19 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/wp-content\/uploads\/2023\/11\/rc-logo.png" : {
+      "ft" : 32768,
+      "iS" : 4515,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/11\/rc-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/wp-cron.php" : {
       "cB" : 0,
       "ft" : 8192,
