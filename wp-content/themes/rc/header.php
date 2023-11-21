@@ -26,28 +26,45 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader" href="#primary"><?php esc_html_e( 'Skip to content', 'rc' ); ?></a>
 	<header class="header">
-		<div class="header__nav--mobile d-md-none">
-			<div class="header__nav-controls">
+		<div class="header--mobile d-md-none">
+			<div class="header__nav-top container-md d-flex align-items-center justify-content-between">
 				<div class="logo">
 					<h1 class="screen-reader"><?php bloginfo( 'name' ); ?></h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo.svg');?></a>
 				</div>	
-				<div class="nav-btn"></div>
+				<div class="nav-btn">
+					<!-- <input type="checkbox" id="nav-btn-checkbox" />
+					<label for="nav-btn-checkbox" class="screen-reader"><span>toggle menu</span></label> -->
+					<div class="nav-btn__slice"></div>
+					<div class="nav-btn__slice"></div>
+					<div class="nav-btn__slice"></div>
+				</div>
 			</div>
-			<nav class="header__nav-menu">
+			<div class="header__nav-menu container-md">
 				<?php wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
+						'container'	=> ''
 					)
-				);
-				?>
-			</nav>
+				);?>
+			</div>
 		</div>
-		<div class="header__nav--desktop d-none d-md-block">
+		<div class="header--desktop d-none d-md-block">
 			<div class="header__nav-wrapper container flex">
-				<div class="logo"></div>
-				<div class="header__nav-menu"></div>
+				<div class="logo">
+					<h1 class="screen-reader"><?php bloginfo( 'name' ); ?></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo.svg');?></a>
+				</div>	
+				<div class="header__nav-menu">
+					<?php wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+							'container'	=> ''
+						)
+					);?>
+				</div>
 			</div>
 		</div>
 	</header>

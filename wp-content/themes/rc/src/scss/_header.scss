@@ -1,0 +1,128 @@
+.header {
+    // Default Styles
+    &--mobile,
+    &--desktop {
+        background-color: $darkBlue;
+    }
+
+    &--mobile {
+        height: 76.4px;
+    }
+
+    // Mobile Styles
+    &__nav-top {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        position: relative;
+        z-index: 1;
+
+        .logo {
+            width: 55px;
+            height: 45.4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .nav-btn {
+            width: 35px;
+            height: 25px;
+            position: relative;
+            cursor: pointer;
+
+            &__slice {
+                width: 100%;
+                height: 1px;
+                background-color: $white;
+                position: absolute;
+                transform: rotate(0deg);
+                opacity: 1;
+                transition: 0.3s $cbTrans;
+
+                &:nth-of-type(1) {
+                    top: 0;
+                }
+
+                &:nth-of-type(2) {
+                    top: 10px;
+                }
+
+                &:nth-of-type(3) {
+                    top: 20px;
+                }
+            }
+            
+        }
+
+
+    }
+
+    &__nav-menu {
+        background-color: $darkBlue;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 76.4px;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        transition: 0.3s $cbTrans 0.3s;
+        z-index: 0;
+        
+        ul {
+            display: block;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.45s $cbTrans;
+
+            li {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            li a {
+                color: white;
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-weight: 700;
+                font-size: 28px;
+            }
+        }
+    }
+
+    &--mobile.nav-open {
+
+        .nav-btn__slice {
+            top: 10px;
+
+            &:nth-of-type(1) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                transform: rotate(45deg);
+            }
+        }
+
+        .header__nav-menu {
+            transform: translateY(0);
+
+            ul {
+                opacity: 1;
+                transition: opacity 0.3s $cbTrans 0.6s;
+            }
+        }
+    }
+
+    // Desktop Styles
+
+}
+

@@ -1,0 +1,1 @@
+const mobileNav=()=>{$(".nav-btn").click((()=>{$(this).toggleClass("nav-open"),$(".header--mobile").toggleClass("nav-open")}))};$((function(){mobileNav()}));
