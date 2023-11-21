@@ -52,13 +52,10 @@
                     top: 20px;
                 }
             }
-            
         }
-
-
     }
 
-    &__nav-menu {
+    &--mobile &__nav-menu {
         background-color: $darkBlue;
         padding: 30px;
         display: flex;
@@ -123,6 +120,46 @@
     }
 
     // Desktop Styles
+
+    &--desktop {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .logo {
+            width: 85px;
+            height: 76.4px;
+        }
+    }
+
+    &--desktop &__nav-menu {
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-content: start;
+            
+        }
+
+        ul li {
+            margin-right: 45px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a  {
+                text-align: center;
+                color: $white;
+                font-size: 18px;
+                font-weight: 500;
+                transition: 0.3s color $cbTrans;
+    
+            }
+
+            a:hover,
+            &.current-menu-item a {
+                color: $mediumBlue;
+            }
+        }
+    }
 
 }
 
