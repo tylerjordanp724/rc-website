@@ -1,0 +1,1 @@
+const closeOnResize=()=>{$(window).resize((()=>{$(".header--mobile").removeClass("nav-open")}))},mobileNav=()=>{$(".nav-btn").click((()=>{$(this).toggleClass("nav-open"),$(".header--mobile").toggleClass("nav-open")})),closeOnResize()};$((function(){mobileNav()}));

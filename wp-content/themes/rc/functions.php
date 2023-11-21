@@ -138,11 +138,18 @@ add_action( 'widgets_init', 'rc_widgets_init' );
  * Enqueue scripts and styles.
  */
 function rc_scripts() {
+	// adding bootstrap
 	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), '5.1.3','all');
+	// adding our styles
 	wp_enqueue_style( 'styles', get_template_directory_uri() .'/css/styles.css', array(), '1.0.0', 'all' );
 	// wp_style_add_data( 'rc-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'rc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	// adding jquery
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js", array(), false, true);
+	// adding our scripts
+	// wp_enqueue_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
