@@ -36,13 +36,26 @@
             &__list {
                 font-size: 14px;
             }
+
+            &__container--media,
+            &__container--media-none {
+                position: relative;
+                width: 100%;
+                height: 0px;
+                overflow: hidden;
+                padding-bottom: 56.25%;
+            }
+
+            &__container--media-none {
+                @include background-opacity($white, 0.05);
+            }
         }
     }
 
     &__bottom {
         padding: 15px 30px;
 
-        @include breakFirst($screen-ld){
+        @include breakFirst($screen-lg){
             padding: 15px;
         }
 

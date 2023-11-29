@@ -234,6 +234,18 @@ add_action( 'init', 'red_camel_vehicle', 0 );
 	));
  }
 
+
+/**
+ * ACF Google Maps API
+ * 
+ * 
+ */
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyAuUGNsyMUDQ7ioNYCx7qIqCIsMGK9cCRE';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
 /**
  * Implement the Custom Header feature.
  */

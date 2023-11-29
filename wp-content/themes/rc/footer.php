@@ -28,10 +28,16 @@
 				<?php if(!empty($location)):?>
 					<div class="bucket col-md-4">
 						<h4 class="bucket__title">Location</h4>
-						<div class="bucket__container">
+						<div class="bucket__container bucket__container--media">
 							<?php echo $location;?>
 						</div>
 					</div>
+					<?php else:?>
+						<div class="bucket col-md-4">
+							<h4 class="bucket__title">Location</h4>
+							<div class="bucket__container bucket__container--media-none">
+							</div>
+						</div>
 				<?php endif;?>
 				<?php if(have_rows('business_hours', 'option')):?>
 					<div class="bucket col-md-4">
@@ -52,7 +58,7 @@
 				<span>&copy; <?php echo date('Y');?> Red Camel Auto</span>
 			</div>
 			<div class="footer__bottom-credit">
-				<span>Site by Tyler Jorday Perry</span>
+				<span>Site by Tyler Jordan Perry</span>
 			</div>
 		</div>
 	</footer>

@@ -16,7 +16,7 @@
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
         position: relative;
-        z-index: 1;
+        z-index: 1000;
 
         .logo {
             width: 55px;
@@ -66,7 +66,7 @@
         height: 100%;
         transform: translateY(-100%);
         transition: 0.45s $cbTrans 0.3s;
-        z-index: 0;
+        z-index: 999;
         
         ul {
             display: block;
