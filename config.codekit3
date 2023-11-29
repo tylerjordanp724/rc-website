@@ -10647,6 +10647,16 @@
       "oAP" : "\/wp-content\/themes\/rc\/header.php",
       "oF" : 0
     },
+    "\/wp-content\/themes\/rc\/img\/rc-logo-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/wp-content\/themes\/rc\/img\/rc-logo-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/wp-content\/themes\/rc\/img\/rc-logo.png" : {
       "ft" : 32768,
       "iS" : 4515,
@@ -10730,6 +10740,17 @@
       "tS" : 0
     },
     "\/wp-content\/themes\/rc\/js\/navigation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/js\/scripts.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/wp-content\/themes\/rc\/js\/scripts.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,

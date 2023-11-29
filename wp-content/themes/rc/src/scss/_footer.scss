@@ -1,0 +1,53 @@
+.footer {
+    background-color: $midnight;
+    color: $white;
+
+    &__content {
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+
+        &-wrapper {
+            padding: 45px 30px;
+
+            @include breakFirst($screen-lg){
+                padding: 45px 15px;
+            }
+        }
+
+        .logo {
+            width: 141px;
+            height: 128px;
+            margin-bottom: 15px;
+        }
+
+        .bucket {
+            color: $white;
+            font-size: 16px;
+            margin-bottom: 30px;
+            
+            &__content p {
+                line-height: 1.4;
+                margin-bottom: 0;
+            }
+
+            &__title {
+                text-transform: capitalize;
+            }
+
+            &__list {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 15px 30px;
+
+        @include breakFirst($screen-ld){
+            padding: 15px;
+        }
+
+        &-credit {
+            font-size: 14px;
+        }
+    }
+}
