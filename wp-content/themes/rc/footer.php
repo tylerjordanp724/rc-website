@@ -9,9 +9,9 @@
  * @package Red_Camel_Auto
  */
  $address = get_field('address', 'option');
+ $phone_number = get_field('phone_number', 'option');
  $location = get_field('location', 'option');
 ?>
-
 	<footer class="footer">
 		<div class="footer__content">
 			<div class="footer__content-wrapper container-lg d-md-flex justify-content-md-between">
@@ -19,9 +19,10 @@
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo-2.svg');?></a>
 					</div>
-					<?php if(!empty($address)):?>
+					<?php if(!empty($address || $phone_number)):?>
 						<div class="bucket__content">
 							<p><?php echo $address;?></p>
+							<p><?php echo 'P:&nbsp;'.$phone_number.'';?></p>
 						</div>	
 					<?php endif;?>
 				</div>
@@ -29,7 +30,9 @@
 					<div class="bucket col-md-4">
 						<h4 class="bucket__title">Location</h4>
 						<div class="bucket__container bucket__container--media">
-							<?php echo $location;?>
+							<div class="acf-map" data-zoom="<?php echo $location['zoom'];?>">
+								<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+							</div>
 						</div>
 					</div>
 					<?php else:?>

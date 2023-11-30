@@ -27,6 +27,13 @@
             &__content p {
                 line-height: 1.4;
                 margin-bottom: 0;
+                display: block;
+                max-width: 85%;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             &__title {
@@ -44,6 +51,13 @@
                 height: 0px;
                 overflow: hidden;
                 padding-bottom: 56.25%;
+            }
+
+            &__container--media .acf-map {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                inset: 0 0 0 0;
             }
 
             &__container--media-none {
