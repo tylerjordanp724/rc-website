@@ -147,6 +147,7 @@ function rc_scripts() {
 	// adding jquery
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js", array(), false, true);
+	wp_enqueue_script( 'maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUGNsyMUDQ7ioNYCx7qIqCIsMGK9cCRE', array(), true ); 
 	// adding our scripts
 	// wp_enqueue_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array(), null, true );
@@ -233,6 +234,18 @@ add_action( 'init', 'red_camel_vehicle', 0 );
 		'menu_slug' => 'footer-fields'
 	));
  }
+
+
+/**
+ * ACF Google Maps API
+ * 
+ * 
+ */
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyAuUGNsyMUDQ7ioNYCx7qIqCIsMGK9cCRE';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 /**
  * Implement the Custom Header feature.
