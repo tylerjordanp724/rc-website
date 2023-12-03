@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $darkBlue;
+    color: $white;
+
+    &__content {
+        padding: 30px;
+
+        @include breakFirst($screen-md) {
+            padding: 30px 15px;
+        }
+    }
+
+    &__content-text {
+        width: 80%;
+        margin-bottom: 30px;
+
+        @include breakFirst($screen-md) {
+            width: 90%;
+            margin-right: 30px;
+        }
+
+        h1 {
+            text-transform: none;
+            font-size: 48px;
+
+            @include breakFirst($screen-md) {
+                font-size: 56px;
+            }
+        }
+
+        strong, em {
+            color: $red;
+        }
+
+        .button-group a.btn {
+            margin-right: 15px;
+        }
+    }
+
+    &__content-media {
+
+    }
+}

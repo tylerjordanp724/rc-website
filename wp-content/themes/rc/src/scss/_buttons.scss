@@ -1,0 +1,17 @@
+a.btn,
+button.btn {
+    appearance: none;
+    font-family: $fontFamily;
+    background-color: $mediumBlue;
+    text-transform: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s $cbTrans;
+    color: $white;
+
+    &:hover {
+        background-color: $red;
+    }
+}
