@@ -15,7 +15,7 @@
 	<footer class="footer">
 		<div class="footer__content">
 			<div class="footer__content-wrapper container-lg d-md-flex justify-content-md-between">
-				<div class="bucket col-md-3">
+				<div class="bucket col-md-3 col-lg-2">
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo-2.svg');?></a>
 					</div>

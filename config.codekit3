@@ -11117,6 +11117,14 @@
       "oAP" : "\/wp-content\/themes\/rc\/template-parts\/content.php",
       "oF" : 0
     },
+    "\/wp-content\/themes\/rc\/template-parts\/hero.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/hero.php",
+      "oF" : 0
+    },
     "\/wp-content\/themes\/twentytwentythree\/assets\/fonts\/dm-sans\/DMSans-Bold-Italic.woff2" : {
       "cB" : 0,
       "ft" : 8192,
