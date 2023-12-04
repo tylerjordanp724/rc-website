@@ -2,7 +2,7 @@ a.btn,
 button.btn {
     appearance: none;
     font-family: $fontFamily;
-    background-color: $mediumBlue;
+    background-color: $darkBlue;
     text-transform: none;
     padding: 15px 30px;
     border-radius: 30px;
@@ -13,5 +13,6 @@ button.btn {
 
     &:hover {
         background-color: $red;
+        color: $white;
     }
 }
