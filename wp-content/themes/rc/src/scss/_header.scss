@@ -5,7 +5,7 @@
     z-index: 999;
     &--mobile,
     &--desktop {
-        background-color: $darkBlue;
+        background-color: transparent;
     }
 
     &--mobile {
@@ -131,6 +131,10 @@
         .logo {
             width: 85px;
             height: 76.4px;
+        }
+
+        &.scrolled {
+            background-color: $darkBlue;
         }
     }
 

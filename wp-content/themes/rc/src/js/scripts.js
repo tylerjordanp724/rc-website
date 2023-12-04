@@ -4,6 +4,20 @@ const closeOnResize = () => {
     });
 }
 
+const headerScroll = () => {
+    const desktopHeader = $('.header--desktop');
+    const currentScroll = $(window).scrollTop();
+    const headerHight = desktopHeader.outerHeight();
+    $(window).scroll(() => {
+        console.log(currentScroll, headerHight);
+        if(currentScroll >= $('.header--desktop').outerHeight() ) {
+            desktopHeader.addClass('scrolled');
+        } else if(currentScroll === 0) {
+            desktopHeader.removeClass('scrolled');
+        }
+    });
+}
+
 const mobileNav = () => {
     const $menuBtn = $('.nav-btn');
 
@@ -14,6 +28,7 @@ const mobileNav = () => {
 
     closeOnResize();
 }
+
 
 /**
  * initMap
@@ -131,5 +146,6 @@ function centerMap( map ) {
 
 $(function() {
     mobileNav();
+    headerScroll();
     initMap($('.acf-map'));
 });
