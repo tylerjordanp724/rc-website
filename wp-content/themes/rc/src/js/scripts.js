@@ -6,7 +6,8 @@ const closeOnResize = () => {
 
 const headerScroll = () => {
     $('.header--desktop').removeClass('scrolled');
-    
+
+    if($(window).scrollTop() > $('.header--desktop').outerHeight()) $('.header--desktop').removeClass('scrolled');    
     $(window).scroll(() => {
         const currentScroll = $(this).scrollTop();
         const desktopHeader = $('.header--desktop');
