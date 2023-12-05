@@ -3,15 +3,16 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    &--mobile,
+
     &--desktop {
         background-color: transparent;
+        transition: background-color 0.3s $cbTrans;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     &--mobile {
         height: 76.4px;
     }
-    
 
     // Mobile Styles
     &__nav-top {
@@ -142,8 +143,7 @@
         ul {
             display: flex;
             flex-direction: row;
-            align-content: start;
-            
+            margin-bottom: 0;
         }
 
         ul li {

@@ -5,14 +5,18 @@ const closeOnResize = () => {
 }
 
 const headerScroll = () => {
-    const desktopHeader = $('.header--desktop');
-    const currentScroll = $(window).scrollTop();
-    const headerHight = desktopHeader.outerHeight();
+    $(window).resize(() => {
+        $('.header--desktop').removeClass('scrolled');
+    });
+    
     $(window).scroll(() => {
-        console.log(currentScroll, headerHight);
-        if(currentScroll >= $('.header--desktop').outerHeight() ) {
+        const currentScroll = $(this).scrollTop();
+        const desktopHeader = $('.header--desktop');
+        const headerHight = desktopHeader.outerHeight();
+
+        if(currentScroll >= headerHight ) {
             desktopHeader.addClass('scrolled');
-        } else if(currentScroll === 0) {
+        } else {
             desktopHeader.removeClass('scrolled');
         }
     });

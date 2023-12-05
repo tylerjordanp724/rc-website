@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div class="header--desktop d-none d-md-block">
-			<div class="header__nav-wrapper container-lg d-md-flex justify-content-md-between align-items-md-center">
+			<div class="header__nav-wrapper container-lg d-flex justify-content-md-between align-items-center">
 				<div class="logo">
 					<h1 class="screen-reader"><?php bloginfo( 'name' ); ?></h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo.svg');?></a>
