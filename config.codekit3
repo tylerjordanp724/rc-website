@@ -10909,6 +10909,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/wp-content\/themes\/rc\/src\/scss\/_featured-content.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/wp-content\/themes\/rc\/css\/styles.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/wp-content\/themes\/rc\/src\/scss\/_fonts.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -11059,7 +11074,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/wp-content\/themes\/rc\/src\/scss\/_variables.scss" : {
+    "\/wp-content\/themes\/rc\/src\/scss\/_typography.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -11074,17 +11089,20 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/wp-content\/themes\/rc\/src\/scss\/styles.css" : {
+    "\/wp-content\/themes\/rc\/src\/scss\/_variables.scss" : {
       "aP" : 1,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/wp-content\/themes\/rc\/src\/scss\/styles-min.css",
+      "oA" : 1,
+      "oAP" : "\/wp-content\/themes\/rc\/css\/styles.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/wp-content\/themes\/rc\/src\/scss\/styles.scss" : {
       "aP" : 1,
@@ -11125,6 +11143,22 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/wp-content\/themes\/rc\/template-parts\/component-featured-content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/component-featured-content.php",
+      "oF" : 0
+    },
+    "\/wp-content\/themes\/rc\/template-parts\/component-hero.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/component-hero.php",
+      "oF" : 0
+    },
     "\/wp-content\/themes\/rc\/template-parts\/content-none.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -11155,14 +11189,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/wp-content\/themes\/rc\/template-parts\/content.php",
-      "oF" : 0
-    },
-    "\/wp-content\/themes\/rc\/template-parts\/hero.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/hero.php",
       "oF" : 0
     },
     "\/wp-content\/themes\/twentytwentythree\/assets\/fonts\/dm-sans\/DMSans-Bold-Italic.woff2" : {

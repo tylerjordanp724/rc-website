@@ -21,7 +21,9 @@ get_header();
 			$content_block = get_row_layout('hero');
 		?>
 			<?php if($content_block == 'hero'):?>
-				<?php get_template_part('template-parts/hero');?>	
+				<?php get_template_part('template-parts/component','hero');?>
+			<?php elseif($content_block == 'featured_content'):?>
+				<?php get_template_part('template-parts/component','featured-content');?>	
 			<?php endif;?>
 		<?php endwhile; endif;?>
 

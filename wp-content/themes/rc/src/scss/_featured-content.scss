@@ -1,0 +1,39 @@
+.featured-content {
+    .title-card {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        
+
+        @include breakFirst($screen-md) {
+            padding-bottom: 0;
+        }
+    }
+
+    .teaser {
+        margin-bottom: 30px;
+
+        .media__img {
+            padding-bottom: 56.25%;
+            margin-bottom: 15px;
+        }
+
+        @include breakFirst($screen-md) {
+            padding-right: 30px;
+            margin-bottom: 0;
+
+            .media__img {
+                padding-bottom: 75%;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -33,8 +33,6 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php include('img/rc-logo.svg');?></a>
 				</div>	
 				<div class="nav-btn">
-					<!-- <input type="checkbox" id="nav-btn-checkbox" />
-					<label for="nav-btn-checkbox" class="screen-reader"><span>toggle menu</span></label> -->
 					<div class="nav-btn__slice"></div>
 					<div class="nav-btn__slice"></div>
 					<div class="nav-btn__slice"></div>

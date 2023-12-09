@@ -1,9 +1,3 @@
-const closeOnResize = () => {
-    $(window).resize(() => {
-        $('.header--mobile').removeClass('nav-open');
-    });
-}
-
 const headerScroll = () => {
     $('.header--desktop').removeClass('scrolled');
 
@@ -24,6 +18,12 @@ const headerScroll = () => {
 const mobileNav = () => {
     const $menuBtn = $('.nav-btn');
 
+    const closeOnResize = () => {
+        $(window).resize(() => {
+            $('.header--mobile').removeClass('nav-open');
+        });
+    }
+
     $menuBtn.click(() => {
         $(this).toggleClass('nav-open');
         $('.header--mobile').toggleClass('nav-open');
@@ -31,7 +31,6 @@ const mobileNav = () => {
 
     closeOnResize();
 }
-
 
 /**
  * initMap

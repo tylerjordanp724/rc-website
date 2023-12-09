@@ -10,9 +10,39 @@ button.btn {
     align-items: center;
     transition: all 0.3s $cbTrans;
     color: $white;
+    width: fit-content;
+    font-size: 16px;
 
     &:hover {
         background-color: $red;
         color: $white;
+    }
+
+    &--underline {
+        font-size: 16px;
+        font-weight: 700;
+        width: fit-content;
+
+        span {
+            position: relative;
+            overflow: hidden;
+        }
+
+        span:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -3px;
+            right: 0;
+            background-color: $mediumBlue;
+            transition: width 0.3s $cbTrans;
+        }
+
+        span:hover:after {
+            width: 0;
+        }
+        
     }
 }
