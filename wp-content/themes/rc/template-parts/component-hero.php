@@ -9,12 +9,12 @@ $image = get_sub_field('image');
 ?>
 
 <div class="hero d-flex align-items-center">
-    <div class="hero__content container-lg d-md-flex align-items-md-center justify-items-md-between">
+    <div class="hero__content container-lg d-lg-flex align-items-md-center justify-items-md-between">
         <?php if(!empty($text)):?>
             <div class="hero__content-text col-md">
                 <?php echo $text;?>
                 <?php if(have_rows('button_group')):?>
-                    <div class="button-group d-flex">
+                    <div class="button-group d-md-flex">
                         <?php while(have_rows('button_group')): the_row();
                             $link = get_sub_field('link');
                         ?>

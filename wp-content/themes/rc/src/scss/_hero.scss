@@ -23,14 +23,14 @@ $headerHeight: 76.4px;
         height: auto;
         z-index: 1;
 
-        @include breakFirst($screen-md) {
+        @include breakFirst($screen-lg) {
             min-height: 80vh;
             padding: 30px 15px;
         }
     }
 
     &__content-text {
-        width: 80%;
+        width: 100%;
         margin-bottom: 30px;
 
         @include breakFirst($screen-md) {
@@ -40,7 +40,11 @@ $headerHeight: 76.4px;
 
         h1 {
             text-transform: none;
-            font-size: 48px;
+            font-size: 36px;
+
+            @include breakFirst($screen-sm) {
+                font-size: 48px;
+            }
 
             @include breakFirst($screen-xl) {
                 font-size: 56px;
@@ -52,7 +56,6 @@ $headerHeight: 76.4px;
         }
 
         .button-group a.btn {
-            margin-right: 15px;
 
             &:first-child:hover,
             &:last-child:hover {
@@ -62,6 +65,12 @@ $headerHeight: 76.4px;
 
             &:first-child {
                 background-color: $mediumBlue;
+                margin-bottom: 15px;
+
+                @include breakFirst($screen-md) {
+                    margin-bottom: 0;
+                    margin-right: 15px;
+                }
             }
 
             &:last-child {
@@ -73,7 +82,15 @@ $headerHeight: 76.4px;
 
     &__content-media {
         .media__img {
-            padding-bottom: 79%;
+            padding-bottom: 56.25%;
+
+            @include breakFirst($screen-md) {
+                padding-bottom: 66.6667%;
+            }
+
+            @include breakFirst($screen-lg) {
+                padding-bottom: 79%;
+            }
         }
     }
 }
