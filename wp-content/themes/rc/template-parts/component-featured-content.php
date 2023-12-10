@@ -16,7 +16,7 @@ $featured_content = get_sub_field('featured_content');
             $link = $title_card['link'];    
         ?>
             <div class="title-card col-md-2">
-                <div class="title-card__top">
+                <div class="title-card__header">
                     <?php if(!empty($title)):?>
                         <h2 class="text--heading-2"><?php echo $title;?></h2>
                     <?php endif;?>

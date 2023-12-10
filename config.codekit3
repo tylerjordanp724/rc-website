@@ -11183,6 +11183,14 @@
       "oAP" : "\/wp-content\/themes\/rc\/template-parts\/content-search.php",
       "oF" : 0
     },
+    "\/wp-content\/themes\/rc\/template-parts\/content-vehicle.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/content-vehicle.php",
+      "oF" : 0
+    },
     "\/wp-content\/themes\/rc\/template-parts\/content.php" : {
       "cB" : 0,
       "ft" : 8192,

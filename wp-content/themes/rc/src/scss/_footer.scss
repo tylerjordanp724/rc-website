@@ -23,6 +23,10 @@
             color: $white;
             font-size: 16px;
             margin-bottom: 30px;
+
+            @include breakFirst($screen-md) {
+                margin-bottom: 0;
+            }
             
             &__content p {
                 line-height: 1.4;

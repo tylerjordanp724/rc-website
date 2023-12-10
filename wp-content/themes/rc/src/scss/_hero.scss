@@ -78,6 +78,18 @@ $headerHeight: 76.4px;
                 color: $darkBlue;
             }
         }
+
+        .stat-group {
+            margin: 30px 0;
+
+            .stat {
+                margin-right: 30px;
+            }
+
+            h3 {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__content-media {

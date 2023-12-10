@@ -16,7 +16,6 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
 		<?php if(have_rows('content_rows')): while(have_rows('content_rows')): the_row(); 
 			$content_block = get_row_layout('hero');
 		?>
