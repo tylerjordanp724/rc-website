@@ -1,3 +1,47 @@
 .content-row {
-    padding: 60px 15px;
+    padding: 30px 15px;
+
+    @include breakFirst($screen-md) {
+        padding: 60px 15px;
+    }
+}
+
+.title-card h2{
+    margin-bottom: 15px;
+}
+
+.stat-group {
+
+    &__list {
+        list-style: 0;
+        padding-left: 0;
+    }
+
+    &__list li {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.item-list {
+    ul {
+        list-style: disc;
+        padding-left: 15px;
+
+        @include breakFirst($screen-md) {
+            columns: 2;
+        }
+
+        li {
+            @extend .text--body-1;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

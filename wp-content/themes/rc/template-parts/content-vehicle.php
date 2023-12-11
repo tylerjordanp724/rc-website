@@ -43,3 +43,49 @@ $v_intro = get_field('vehicle_intro');
         </div>
     </div>
 <?php endif;?>
+<?php if(have_rows('vehicle_details')):?>
+    <div class="content-row">
+        <div class="content-row__inner container-lg d-lg-flex align-items-lg-start justify-content-lg-between">
+            <div class="title-card col-lg-2">
+                <h2 class="text--heading-2">Vehicle Details</h2>    
+            </div>
+            <div class="stat-group col-lg-8">
+                <ul class="stat-group__list d-md-flex">
+                    <?php while(have_rows('vehicle_details')): the_row();
+                        $title = get_sub_field('title');
+                        $detail = get_sub_field('detail');
+                    ?>
+                        <li class="stat col-md-3">
+                            <?php if(!empty($title)):?>
+                                <h3 class="text--label text--label-md"><?php echo $title;?></h3>
+                            <?php endif;?>
+                            <?php if(!empty($detail)):?>
+                                <span class="text--body-1"><?php echo $detail;?></span>    
+                            <?php endif;?>
+                        </li>
+                    <?php endwhile;?>
+                </ul>
+            </div>
+        </div>
+    </div>
+<?php endif;?>
+<?php if(have_rows('vehicle_features')):?>
+    <div class="content-row">
+        <div class="content-row__inner container-lg d-lg-flex align-items-lg-start justify-content-lg-between">
+            <div class="title-card col-lg-2">
+                <h2 class="text--heading-2">Additional Features</h2>    
+            </div>
+            <div class="item-list col-lg-8">
+                <ul>
+                    <?php while(have_rows('vehicle_features')): the_row();
+                        $feature = get_sub_field('feature');
+                    ?>
+                        <?php if(!empty($feature)):?>
+                            <li><?php echo $feature;?></li>    
+                        <?php endif;?>
+                    <?php endwhile;?>  
+                </ul>
+            </div>
+        </div>
+    </div>    
+<?php endif;?>

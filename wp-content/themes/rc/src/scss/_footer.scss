@@ -24,6 +24,10 @@
             font-size: 16px;
             margin-bottom: 30px;
 
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             @include breakFirst($screen-md) {
                 margin-bottom: 0;
             }
@@ -41,6 +45,7 @@
 
             &__title {
                 text-transform: capitalize;
+                margin-bottom: 15px;
             }
 
             &__list {

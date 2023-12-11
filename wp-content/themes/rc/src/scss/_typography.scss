@@ -5,6 +5,12 @@
         font-size: 16px;
     }
 
+    &--body-2 {
+        color: $mediumBlue;
+        line-height: 1.4;
+        font-size: 20px;
+    }
+
     &--body-bold {
         color: $mediumBlue;
         font-weight: 700;
@@ -29,6 +35,10 @@
         text-transform: capitalize;
         font-weight: 500;
         font-size: 18px;
+
+        &-md {
+            font-weight: 700;
+        }
     }
 
     &--label-lg {
