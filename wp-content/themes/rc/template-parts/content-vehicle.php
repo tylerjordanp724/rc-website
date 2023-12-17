@@ -40,6 +40,25 @@ $v_intro = get_field('vehicle_intro');
                     <a href="tel:2679354287" class="btn">Call (267) 935 - 4287</a>
                 </div>
             </div>
+            <?php if(!empty($gallery)):?>
+                <div class="gallery col-md">
+                    <div class="gallery__inner">
+                        <?php foreach($gallery as $gallery_img):?>
+                            <div class="media__img">
+                                <img class="b-lazy" data-src="<?php echo $gallery_img['url'];?>" />
+                            </div>
+                        <?php endforeach;?>
+                    </div>
+                    <div class="gallery__nav">
+                       <?php foreach($gallery as $gallery_img):?>
+                            <div class="media__img">
+                                <img class="b-lazy" data-src="<?php echo $gallery_img['url'];?>" />
+                            </div>  
+                        <?php endforeach;?>     
+                    </div> 
+                </div>
+                  
+            <?php endif;?>
         </div>
     </div>
 <?php endif;?>

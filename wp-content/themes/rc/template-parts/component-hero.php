@@ -34,11 +34,11 @@ $image = get_sub_field('image');
                     $img_alt_text = $image['alt'];
                 ?>
                     <div class="media__img">
-                        <img src="<?php $img_src;?>" alt="<?php $img_alt_text;?>"/>
+                        <img class="b-lazy" data-src="<?php $img_src;?>" alt="<?php $img_alt_text;?>"/>
                     </div>
                 <?php else:?>
                     <div class="media__img">
-                        <img src="http://placehold.it/400"/>
+                        <img class="b-lazy" data-src="http://placehold.it/400"/>
                     </div>
                 <?php endif;?>
             </div>

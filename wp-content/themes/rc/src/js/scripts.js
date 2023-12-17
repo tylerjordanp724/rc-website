@@ -32,6 +32,35 @@ const mobileNav = () => {
     closeOnResize();
 }
 
+const carousel = () => {
+    const $carousel = $('.gallery__inner');
+    const $carouselNav = $('.gallery__nav');
+
+    $carousel.flickity({
+        cellAlign: 'center',
+        arrowShape: { 
+            x0: 10,
+            x1: 60, y1: 50,
+            x2: 70, y2: 40,
+            x3: 30
+        },
+        lazyLoad: true,
+        pageDots: false,
+        wrapAround: true
+    });
+
+    $carouselNav.flickity({
+        asNavFor: `.gallery__inner`,
+        contain: true,
+        pageDots: false,
+        prevNextButtons: false,
+        wrapAround: false,
+        cellAlign: 'center'
+    });
+
+    $carouselNav.flickity('resize');
+}
+
 /**
  * initMap
  *
@@ -147,6 +176,14 @@ function centerMap( map ) {
 }
 
 $(function() {
+    const bLazy = new Blazy();
+    $('.gallery__inner').on('scroll.flickity', function(){
+       bLazy.revalidate();
+    });
+    $('.gallery__nav').on('scroll.flickity', function(){
+        bLazy.revalidate();
+    });
+    carousel();
     mobileNav();
     headerScroll();
     initMap($('.acf-map'));

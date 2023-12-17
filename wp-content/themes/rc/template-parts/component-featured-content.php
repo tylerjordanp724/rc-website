@@ -43,11 +43,11 @@ $featured_content = get_sub_field('featured_content');
                         <div class="teaser teaser--sm col-md">
                             <?php if(!empty($feat_img)):?>
                                 <div class="media__img">
-                                    <img src="<?php echo $feat_img;?>" />
+                                    <img class="b-lazy" data-src="<?php echo $feat_img;?>" />
                                 </div> 
                             <?php else:?>
                                 <div class="media__img">
-                                    <img src="http://placehold.it/200" />
+                                    <img class="b-lazy" data-src="http://placehold.it/200" />
                                 </div> 
                             <?php endif;?>
                             <?php if(!empty($title)):?>
