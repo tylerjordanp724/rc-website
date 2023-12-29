@@ -16,6 +16,19 @@
         font-weight: 700;
     }
 
+    &--heading-1 {
+        font-size: 48px;
+        text-transform: capitalize;
+
+        @include breakFirst($screen-md) {
+            font-size: 56px;
+        }
+
+        @include breakFirst($screen-lg) {
+            font-size: 84px;
+        }
+    }
+
     &--heading-2 {
         font-size: 36px;
         text-transform: capitalize;

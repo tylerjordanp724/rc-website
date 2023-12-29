@@ -41,6 +41,7 @@ $headerHeight: 76.4px;
         h1 {
             text-transform: none;
             font-size: 36px;
+            margin-bottom: 15px;
 
             @include breakFirst($screen-sm) {
                 font-size: 48px;

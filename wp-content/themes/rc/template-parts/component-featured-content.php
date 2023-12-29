@@ -40,7 +40,7 @@ $featured_content = get_sub_field('featured_content');
                         $v_mileage = $v_intro['mileage'];
                         $feat_img = get_the_post_thumbnail();
                     ?>
-                        <div class="teaser teaser--sm col-md">
+                        <div class="teaser col-md">
                             <?php if(!empty($feat_img)):?>
                                 <div class="media__img">
                                     <img class="b-lazy" data-src="<?php echo $feat_img;?>" />

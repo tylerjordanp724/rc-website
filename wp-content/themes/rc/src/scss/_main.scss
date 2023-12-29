@@ -1,3 +1,4 @@
+// Content Row
 .content-row {
     padding: 30px 15px;
 
@@ -6,9 +7,28 @@
     }
 }
 
+// Title Card
+
 .title-card h2{
     margin-bottom: 15px;
 }
+
+// Teaser
+
+.teaser {
+    margin-bottom: 30px;
+
+    .media__img {
+        padding-bottom: 56.25%;
+        margin-bottom: 15px;
+
+        @include breakFirst ($screen-md) {
+            padding-bottom: 75%;
+        }
+    }
+}
+
+// Stat Group
 
 .stat-group {
 
@@ -30,6 +50,8 @@
         }
     }
 }
+
+// Item List
 
 .item-list {
     ul {
@@ -75,10 +97,6 @@
         height: auto;
         overflow: hidden;
         margin: auto;
-
-        // .flickity-slider {
-        //     margin: 0 auto;
-        // }
 
         .media__img {
             position: relative;

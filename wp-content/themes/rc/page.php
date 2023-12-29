@@ -16,6 +16,12 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<?php if(is_page() && !is_front_page()):?>
+			<?php get_template_part('template-parts/component', 'page-hero');?>
+			<?php if(is_page('inventory')):?>
+				<?php get_template_part('template-parts/component', 'inventory');?>
+			<?php endif;?>
+		<?php endif;?>
 		<?php if(have_rows('content_rows')): while(have_rows('content_rows')): the_row(); 
 			$content_block = get_row_layout('hero');
 		?>

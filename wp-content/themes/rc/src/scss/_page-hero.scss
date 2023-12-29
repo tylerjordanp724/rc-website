@@ -1,0 +1,22 @@
+// Page Hero Styles
+.page-hero {
+    background-color: $darkBlue;
+    min-height: 540px;
+    color: $white;
+
+    &__inner {
+        padding: 0 30px;
+
+        @include breakFirst($screen-lg) {
+            padding: 0 15px;
+        }
+
+        h1 {
+            margin: 30px 0;
+        }
+
+        p.text--body-2 {
+            color: $white;
+        }
+    }
+}
