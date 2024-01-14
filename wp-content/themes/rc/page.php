@@ -30,7 +30,9 @@ get_header();
 			<?php if($content_block == 'hero'):?>
 				<?php get_template_part('template-parts/component','hero');?>
 			<?php elseif($content_block == 'featured_content'):?>
-				<?php get_template_part('template-parts/component','featured-content');?>	
+				<?php get_template_part('template-parts/component','featured-content');?>
+			<?php elseif($content_block == 'featured_testimonial'):?>
+				<?php get_template_part('template-parts/component','featured-testimonial');?>		
 			<?php endif;?>
 		<?php endwhile; endif;?>
 

@@ -18,6 +18,11 @@ button.btn {
         color: $white;
     }
 
+    &--inverse {
+        background-color: $white;
+        color: $darkBlue;
+    }
+
     &--underline {
         font-size: 16px;
         font-weight: 700;

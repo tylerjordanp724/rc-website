@@ -10647,11 +10647,31 @@
       "oAP" : "\/wp-content\/themes\/rc\/header.php",
       "oF" : 0
     },
+    "\/wp-content\/themes\/rc\/img\/bg-gradient-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/wp-content\/themes\/rc\/img\/bg-gradient-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/wp-content\/themes\/rc\/img\/bg-gradient.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/wp-content\/themes\/rc\/img\/bg-gradient.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/wp-content\/themes\/rc\/img\/quotes.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/wp-content\/themes\/rc\/img\/quotes.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -11201,6 +11221,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/wp-content\/themes\/rc\/template-parts\/component-featured-content.php",
+      "oF" : 0
+    },
+    "\/wp-content\/themes\/rc\/template-parts\/component-featured-testimonial.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/themes\/rc\/template-parts\/component-featured-testimonial.php",
       "oF" : 0
     },
     "\/wp-content\/themes\/rc\/template-parts\/component-hero.php" : {
