@@ -32,7 +32,11 @@ get_header();
 			<?php elseif($content_block == 'featured_content'):?>
 				<?php get_template_part('template-parts/component','featured-content');?>
 			<?php elseif($content_block == 'featured_testimonial'):?>
-				<?php get_template_part('template-parts/component','featured-testimonial');?>		
+				<?php get_template_part('template-parts/component','featured-testimonial');?>
+			<?php elseif($content_block == 'content_card'):?>
+				<?php get_template_part('template-parts/component','content-card');?>	
+			<?php elseif($content_block == 'content_editor'):?>
+				<?php get_template_part('template-parts/component','content-editor');?>		
 			<?php endif;?>
 		<?php endwhile; endif;?>
 

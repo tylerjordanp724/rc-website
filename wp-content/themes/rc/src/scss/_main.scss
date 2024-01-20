@@ -26,6 +26,32 @@
             padding-bottom: 75%;
         }
     }
+
+    &--card {
+    .teaser__text {
+            padding: 30px 0;
+
+            &-inner {
+                width: 90%;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            @include breakFirst($screen-lg) {
+                padding: 30px 45px;
+            }
+        }
+
+        
+
+
+    }
 }
 
 // Stat Group
@@ -114,5 +140,58 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+// WYSIWYG
+.wysiwyg {
+    max-width: 800px;
+    margin: auto;
+
+    p {
+        @extend .text--body-1;
+    }
+
+    p strong {
+        color: $darkBlue;
+    }
+
+    p a {
+        color: $mediumBlue;
+        box-shadow: inset 0 -1px 0 0 $darkBlue;
+        transition: box-shadow 0.3s $cbTrans;
+        
+        &:hover {
+            box-shadow: inset 0 -17px 0 0 $darkBlue;
+            color: $white;
+        }
+        
+    }
+
+    blockquote {
+        position: relative;
+        padding: 15px 0 0 40px;
+        font-style: italic;
+        
+        &:before {
+            content: '';
+            display: block;
+            background: url(../img/quotes.svg) no-repeat center center / cover;
+            width: 27px;
+            height: 19px;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
