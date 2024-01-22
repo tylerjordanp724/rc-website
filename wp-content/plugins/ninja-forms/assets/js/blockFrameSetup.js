@@ -1,0 +1,1 @@
+jQuery(document).on("nfFormReady",(function(){var n=window.frameElement,o=jQuery("#nf-form-"+ninjaFormsBlockSetup.form_id+"-cont").find(".ninja-forms-form-wrap").outerHeight(!0);n&&(n.height=o+125)}));

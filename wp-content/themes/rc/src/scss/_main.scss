@@ -194,4 +194,34 @@
         width: 100%;
         height: auto;
     }
+
+    .nf-form-layout {
+        .nf-form-content, .nf-cell {
+            padding: 0;
+            color: $mediumBlue;
+        }
+
+        .nf-form-content {
+            background: none;
+            border: 0;
+        }
+
+        .nf-form-content textarea,
+        .nf-form-content input[type="text"],
+        .nf-form-content input[type="email"],
+        .nf-form-content select {
+            border: 0;
+            background: transparent;
+            border-bottom: 2px solid $darkBlue;
+        }
+
+        .nf-field-container {
+            border: 0;
+        }
+
+        .nf-field-element input[type="button"] {
+            padding: 15px 30px;
+            height: auto;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 a.btn,
-button.btn {
+button.btn,
+input[type="button"] {
     appearance: none;
     font-family: $fontFamily;
     background-color: $darkBlue;
