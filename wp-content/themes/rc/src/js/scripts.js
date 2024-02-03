@@ -20,13 +20,13 @@ const mobileNav = () => {
 
     const closeOnResize = () => {
         $(window).resize(() => {
-            $('.header--mobile').removeClass('nav-open');
+            $('.header--mobile, body').removeClass('nav-open');
         });
     }
 
     $menuBtn.click(() => {
         $(this).toggleClass('nav-open');
-        $('.header--mobile').toggleClass('nav-open');
+        $('.header--mobile, body').toggleClass('nav-open');
     });
 
     closeOnResize();
