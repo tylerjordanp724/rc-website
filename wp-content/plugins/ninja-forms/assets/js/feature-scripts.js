@@ -1,1 +1,0 @@
-function ninja_forms_update_cache_mode(a){var e={action:"nf_update_cache_mode",security:nfAdmin.ajaxNonce,cache_mode:a};jQuery.post(ajaxurl,e,(function(a){var e=JSON.parse(a);console.log(e)}))}

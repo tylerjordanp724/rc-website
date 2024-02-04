@@ -12,6 +12,7 @@ config.codekit3
 wp-admin/*
 wp-includes/*
 wp-config.php
+wp-content/plugins/*
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
@@ -66,6 +67,7 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 /wp-includes
 /wp-content/index.php
 /wp-content/themes/twentytwentythree
+/wp-content/themes/twentytwentyfour
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
 /wp-content/plugins/akismet*
