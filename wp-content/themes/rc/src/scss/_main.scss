@@ -194,4 +194,96 @@
         width: 100%;
         height: auto;
     }
+    
+    .nf-form-wrap {
+
+        .nf-response-msg p {
+            background-color: rgba(100, 225, 100, .25);
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            color: darkgreen;
+        }
+    }
+
+    .nf-form-layout {
+
+        .nf-error, .nf-error-msg {
+            color: $red;
+        }
+
+        .nf-error.field-wrap .nf-field-element:after {
+            background-color: $red;
+        }
+
+        .nf-error .ninja-forms-field {
+            border-color: $red !important;
+        }
+
+        .nf-form-content, .nf-cell {
+            padding: 0;
+            color: $mediumBlue;
+        }
+
+        .firstname-container {
+            @include breakFirst($screen-sm) {
+                padding-right: 15px;
+            } 
+        }
+
+        .lastname-container {
+            @include breakFirst($screen-sm) {
+                padding-left: 15px;
+            } 
+        }
+
+        .nf-form-content {
+            background: none;
+            border: 0;
+        }
+
+        .nf-form-content textarea,
+        .nf-form-content input[type="text"],
+        .nf-form-content input[type="email"],
+        .nf-form-content select,
+        .nf-form-content .list-select-wrap .nf-field-element > div {
+            border: 0;
+            background: transparent;
+            border-bottom: 2px solid $mediumBlue;
+            color: $mediumBlue;
+
+            &:focus {
+                background-color: #eee;
+            }
+        }
+
+        .nf-form-content .list-select-wrap .nf-field-element > div:after {
+            font-size: 16px;
+            color: $darkBlue;
+        }
+
+        .nf-field-container {
+            border: 0;
+            border-color: none;
+        }
+
+        .nf-field-element input[type="button"] {
+            padding: 15px 30px;
+            height: auto;
+            @extend .btn;
+            @extend .text--body-1;
+            color: $white;
+            background-color: $darkBlue;
+            font-family: $fontFamily;
+            text-transform: capitalize;
+
+            &:hover {
+                background-color: $red;
+            }
+        }
+
+        .nf-form-content select > div {
+            border: 0 !important;
+        }
+    }
 }
