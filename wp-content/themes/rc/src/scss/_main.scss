@@ -267,11 +267,12 @@
             border-color: none;
         }
 
-        .nf-field-element input[type="button"] {
+        .nf-field-element input[type="submit"] {
             padding: 15px 30px;
             height: auto;
             @extend .btn;
             @extend .text--body-1;
+            border-radius: 30px;
             color: $white;
             background-color: $darkBlue;
             font-family: $fontFamily;
