@@ -9,8 +9,10 @@ Thumbs.db
 config.codekit3
 
 # wordpress specific
-
+wp-admin/*
+wp-includes/*
 wp-config.php
+wp-content/plugins/*
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
