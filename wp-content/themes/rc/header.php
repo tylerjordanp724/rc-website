@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/ugw8uup.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_site_url();?>/favicon.png"/>
 
 	<?php wp_head(); ?>
 </head>
