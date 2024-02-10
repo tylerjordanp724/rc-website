@@ -19,7 +19,7 @@ $link = get_sub_field('link');
             ?>
                 <div class="teaser__img col-lg">
                     <div class="media__img">
-                        <img class="b-lazy" data-src="<?php $img_src;?>" alt="<?php $img_alt_text;?>"/>
+                        <img class="b-lazy" data-src="<?php echo $img_src;?>" alt="<?php $img_alt_text;?>"/>
                     </div>
                 </div>
             <?php else:?>

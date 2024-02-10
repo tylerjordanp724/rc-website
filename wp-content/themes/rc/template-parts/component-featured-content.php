@@ -38,7 +38,7 @@ $featured_content = get_sub_field('featured_content');
                         $title = get_the_title();
                         $v_price = $v_intro['price'];
                         $v_mileage = $v_intro['mileage'];
-                        $feat_img = get_the_post_thumbnail();
+                        $feat_img = get_the_post_thumbnail_url();
                     ?>
                         <div class="teaser col-md">
                             <?php if(!empty($feat_img)):?>
