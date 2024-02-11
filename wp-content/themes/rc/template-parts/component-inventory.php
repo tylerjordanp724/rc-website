@@ -51,7 +51,7 @@ $post_query = new WP_Query($args);
             </div> 
         <?php endwhile;?>
     </div>
-    <?php if($count >= 12):?>
+    <?php if($count <= 12):?>
         <div class="archive__pagination container-lg">
             <?php echo paginate_links( 
                 array(
