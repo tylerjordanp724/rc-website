@@ -202,7 +202,7 @@ function red_camel_vehicle() {
 		'description'           => __( 'All vehicles for Red Camel Auto', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields', 'thumbnail', 'page-attributes', 'post-formats' ),
-		'taxonomies'            => array( 'body', 'make', 'model', 'price', 'mileage', 'condition' ),
+		//'taxonomies'            => array( 'body', 'make', 'model', 'price', 'mileage', 'condition' ),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
