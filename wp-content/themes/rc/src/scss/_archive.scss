@@ -17,12 +17,12 @@
 
         h3 {
             margin-bottom: 15px;
+            color: $brandBlue;
         }
 
         .item__content {
             p {
                 @extend .text--body-1;
-
                 margin-bottom: 0;
             }
         } 
@@ -66,7 +66,7 @@
                 a:hover {
                     background-color: #eee;
                     border-color: transparent;
-                    color: $darkBlue;
+                    color: $brandBlue;
                 }
 
                 a.next, a.prev {
@@ -75,7 +75,7 @@
 
                     &:hover {
                         background: none;
-                        color: $darkBlue;
+                        color: $brandBlue;
                     }
                 }
 

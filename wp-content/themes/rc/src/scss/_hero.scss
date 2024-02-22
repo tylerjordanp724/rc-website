@@ -4,7 +4,7 @@ $headerHeight: 76.4px;
     position: relative;
     width: 100%;
     height: auto;
-    background-color: $darkBlue;
+    background-color: $brandBlue;
     color: $white;
 
     &:after {
@@ -60,7 +60,7 @@ $headerHeight: 76.4px;
 
             &:first-child:hover,
             &:last-child:hover {
-                background-color: $red;
+                background-color: $darkBlue;
                 color: $white;
             }
 
@@ -76,7 +76,7 @@ $headerHeight: 76.4px;
 
             &:last-child {
                 background-color: $white;
-                color: $darkBlue;
+                color: $brandBlue;
             }
         }
 

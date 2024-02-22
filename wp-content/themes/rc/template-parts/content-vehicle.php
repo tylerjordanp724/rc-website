@@ -11,7 +11,8 @@ $v_intro = get_field('vehicle_intro');
     $mileage = $v_intro['mileage'];
     $model = $v_intro['model'];
     $price = $v_intro['price'];
-    $gallery = $v_intro['photo_gallery'];    
+    $gallery = $v_intro['photo_gallery'];
+    $year = $v_intro['year'];    
 ?>
     <div class="hero d-flex align-items-center"">
         <div class="hero__content container-lg d-lg-flex align-items-md-center justify-items-md-between">
@@ -31,6 +32,12 @@ $v_intro = get_field('vehicle_intro');
                             <div class="stat">
                                 <h3 class="text--label">Mileage</h3>
                                 <span class="text--label-lg"><?php echo $mileage?></span>
+                            </div>
+                        <?php endif;?>
+                        <?php if(!empty($year)):?>
+                            <div class="stat">
+                                <h3 class="text--label">Year</h3>
+                                <span class="text--label-lg"><?php echo $year?></span>
                             </div>
                         <?php endif;?>
                     </div>    
