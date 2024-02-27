@@ -28,6 +28,8 @@ $headerHeight: 76.4px;
             padding: 30px 15px;
         }
 
+        // Vehicle Interior Hero
+
         &-top {
             margin-bottom: 30px;
 
@@ -117,10 +119,62 @@ $headerHeight: 76.4px;
 
             .detail-row .detail-row__stats .stat-group__list li h3,
             .detail-row .detail-row__stats .stat-group__list li span {
+                display: block;
                 color: $white;
+            }
+
+            .detail-row .detail-row__stats .stat-group__list li h3 {
+                margin-bottom: 6px;
+            }
+
+            .detail-row .detail-row__stats .stat-group__list .stat {
+                padding-right: 8px;
+                margin-bottom: 60px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-footer {
+            padding-top: 30px;
+            .button-group .btn {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                display: block;
+
+                @include breakFirst($screen-sm) {
+                    width: 48%;
+
+                }
+
+                &:first-child:hover,
+                &:last-child:hover {
+                    background-color: $darkBlue;
+                    color: $white;
+                }
+
+                &:first-child {
+                    background-color: $mediumBlue;
+                    margin-bottom: 15px;
+    
+                    @include breakFirst($screen-lg) {
+                        margin-bottom: 0;
+                        margin-right: 15px;
+                    }
+                }
+    
+                &:last-child {
+                    background-color: $white;
+                    color: $brandBlue;
+                }
             }
         }
     }
+
+    // Basic Hero Styles
 
     &__content-text {
         width: 100%;

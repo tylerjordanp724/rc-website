@@ -1,0 +1,21 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+    
+    &--engine {
+        background: url(../img/icons/engine.svg) no-repeat center / contain;
+    }
+
+    &--drive {
+        background: url(../img/icons/drive.svg) no-repeat center center / contain;
+    }
+
+    &--fuel {
+        background: url(../img/icons/fuel.svg) no-repeat center center / contain;
+    }
+
+    &--transmission {
+        background: url(../img/icons/transmission.svg) no-repeat center center / contain;
+    }
+}

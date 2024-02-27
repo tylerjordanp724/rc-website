@@ -78,8 +78,12 @@ $v_intro = get_field('vehicle_intro');
                                         <?php while(have_rows('vehicle_details')): the_row();
                                             $title = get_sub_field('title');
                                             $detail = get_sub_field('detail');
+                                            $icon = get_sub_field('icon');
                                         ?>
-                                            <li class="stat col-4">
+                                            <li class="stat col-6 col-lg-4">
+                                                <?php if(!empty($icon)):?>
+                                                    <div class="icon icon--<?php echo $icon;?>"></div>    
+                                                <?php endif;?>
                                                 <?php if(!empty($title)):?>
                                                     <h3 class="text--label text--label-md"><?php echo $title;?></h3>
                                                 <?php endif;?>
@@ -93,36 +97,18 @@ $v_intro = get_field('vehicle_intro');
                             </div>
                         <?php endif;?>
                     </div>
-                    
                 <?php endif;?>
+            </div>
+            <div class="hero__content-footer">
+                <div class="button-group d-sm-flex justify-content-between d-lg-none">
+                    <a href="<?php echo get_site_url();?>/contact" class="btn">Contact us</a>
+                    <a href="tel:2679354287" class="btn">Call (267) 935 - 4287</a>
+                </div>
             </div>
         </div>
     </div>
 <?php endif;?>
-<!-- <?php if(have_rows('vehicle_details')):?>
-    <div class="detail-row">
-        <div class="detail-row__title">
-            <h2 class="text--heading-3">Vehicle Details</h2>    
-        </div>
-        <div class="stat-group">
-            <ul class="stat-group__list d-md-flex">
-                <?php while(have_rows('vehicle_details')): the_row();
-                    $title = get_sub_field('title');
-                    $detail = get_sub_field('detail');
-                ?>
-                    <li class="stat col-md-4">
-                        <?php if(!empty($title)):?>
-                            <h3 class="text--label text--label-md"><?php echo $title;?></h3>
-                        <?php endif;?>
-                        <?php if(!empty($detail)):?>
-                            <span class="text--body-1"><?php echo $detail;?></span>    
-                        <?php endif;?>
-                    </li>
-                <?php endwhile;?>
-            </ul>
-        </div>
-    </div>
-<?php endif;?> -->
+
 <?php if(have_rows('vehicle_features')):?>
     <div class="content-row">
         <div class="content-row__inner container-lg d-lg-flex align-items-lg-start justify-content-lg-between">
