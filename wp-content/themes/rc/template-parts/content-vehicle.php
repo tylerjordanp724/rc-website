@@ -19,7 +19,7 @@ $v_intro = get_field('vehicle_intro');
             <?php if(!empty($make) || !empty($model)):?>
                 <div class="hero__content-top d-lg-flex align-items-md-start justify-content-md-between">
                     <div class="content-title col-lg-5">
-                        <h1 class="text--heading-2"><?php echo $title . " / " . $model;?></h1>    
+                        <h1 class="text--heading-2"><?php echo $title .$model;?></h1>    
                     </div>
                     <div class="button-group d-none d-lg-flex">
                         <a href="<?php echo get_site_url();?>/contact" class="btn">Contact us</a>
